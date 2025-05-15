@@ -1,0 +1,18 @@
+<table class="style-table table-hover1">
+  <thead>
+    <th>#Order Nr.</th>
+    <th>Kunde</th>
+    <th>Betalings- metode</th>
+    <th>Beløb at betale</th>
+    <th>Betalt</th>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of orderList">
+      <th (click)="openForEdit(item.id)">{{item.id}}</th>
+      <td (click)="openForEdit(item.id)">{{item.customer.Name}}</td>
+      <td (click)="openForEdit(item.id)">{{item.PMethod}}</td>
+      <td (click)="openForEdit(item.id)">{{item.GTotal}}</td>
+      <td (click)="openForEdit(item.id)">{{item.Payid}}</td>
+    </tr>
+  </tbody>
+</table>
